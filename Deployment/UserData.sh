@@ -8,7 +8,8 @@ cd
 mkdir App
 sudo mkdir .aws
 cd App
-git clone https://github.com/roee4643/PokemonApi
+git clone https://github.com/roee4643/PokemonApi_MongoDB
+
 cd ..
 
 sudo touch .aws/credentials
@@ -34,7 +35,7 @@ echo "export AWS_DEFAULT_REGION=us-west-2" >> /etc/profile
 source /etc/profile
 
 
-cd /home/ec2-user/App/PokemonApi
-python3 create_databaseDynamo.py
-python3 PokemonMainApi2.py
+cd /home/ec2-user/App/PokemonApi_MongoDB
+
+
 
