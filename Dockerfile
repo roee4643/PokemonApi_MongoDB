@@ -11,6 +11,9 @@ COPY requirements.txt ./
 
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Install MongoDB
+RUN apt-get update && apt-get install -y mongodb
+
 EXPOSE 80
 
 # Copy the rest of the application code into the container
