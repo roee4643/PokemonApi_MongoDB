@@ -1,4 +1,4 @@
 requests
 boto3
-pymongo
+pymongo==4.0.1
 
