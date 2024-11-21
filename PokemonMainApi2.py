@@ -6,17 +6,20 @@ from Pokemon_GetApi_Class import GetApi  # Import the GetApi class from pokemon_
 from Pokemon_Utilities_Class import Utilities  # Import the Utilities class        
 from pymongo import MongoClient
 
+
 # Main function
 def main():
+    instance_ip = input("Please enter mongodb instance ip: ")
     # Define class variables
     get_api = GetApi()
-    utilities = Utilities()
+    utilities = Utilities(instance_ip)
 
     # Create break flag
     flag = 0
     # Get Pokémon names list by API and store in pokemon_list
     pokemon_list = get_api.pokemon_list()  # Get Pokémon list
 
+    
     print("----Welcome to the Pokémon generator!-----")
     while flag == 0:
         print("\n")
