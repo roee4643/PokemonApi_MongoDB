@@ -9,7 +9,7 @@ from pymongo import MongoClient
 
 # Main function
 def main():
-    instance_ip = input("Please enter mongodb instance ip: ")
+    instance_ip = instance_ip = os.getenv('MONGO_IP')
     # Define class variables
     get_api = GetApi()
     utilities = Utilities(instance_ip)
