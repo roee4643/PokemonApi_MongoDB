@@ -3,7 +3,7 @@ from pymongo.errors import CollectionInvalid
 
 def create_collection():
     # Connect to MongoDB (update the URI as needed)
-    client = MongoClient("mongodb://host.docker.internal:27017/")
+    client = MongoClient("mongodb://54.149.108.64:27017/")
     db = client["mydatabase"]  # Use an existing or new database named 'mydatabase'
 
     # Define the collection name
