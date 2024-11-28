@@ -1,5 +1,4 @@
 requests
-boto3
 pymongo==4.0.1
 flask
 
