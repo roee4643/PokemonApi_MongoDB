@@ -45,7 +45,7 @@ mkdir -p ~/.aws
 
 
 #install mongodb 
-sudo cat <<EOF > /etc/yum.repos.d/mongodb-org-8.0.repo
+sudo tee /etc/yum.repos.d/mongodb-org-8.0.repo > /dev/null <<EOF
 [mongodb-org-8.0]
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/amazon/2023/mongodb-org/8.0/x86_64/
